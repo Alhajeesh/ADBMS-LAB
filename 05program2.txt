@@ -1,0 +1,44 @@
+-- 
+-- Roll No: 05
+-- Name: al hajeesh ap
+-- Program: program 1
+-- 
+
+
+--
+-- Table structure for table employee
+
+create table employee(ssn int primary key,name varchar(10),address varchar(20),dnum char(5));
+ alter table employee add super_ssn int;
+
+--
+-- Dumping data for table employee
+
+insert into employee value(1,"manu”,”tirur”,”k01");
+insert into employee value(2,”janu”,”tirur","k02");
+insert into employee value(3,”sharath”,”tirur","k03");
+insert into employee value(4,”sharath”,”kuttippuram”,”k04");
+insert into employee value(5,”hajeesh”,”malappuram”,”k05");
+--
+--
+-- Table structure for table dept
+--
+create table dept(dno char(5) primary key,dname varchar(10) unique,location varchar(15));
+ alter table dept add mgr_ssn int;
+
+--
+-- Dumping data for table dept
+
+insert into dept value("k01","manager","dept");
+insert into dept value("k21","lawyer","dept01");
+insert into dept value("k34","designer","dept03");
+insert into dept value("k45","officer","dept04");
+insert into dept value("k67","fisher","dept05");
+
+--
+
+-- SQl Query Statements
+--
+
+-- -----SQL query statments preceeded by the its question-------- # This line may be removed in the actual file
+-- -----Question number should be commented---------------#This line may be removed in the actual file
